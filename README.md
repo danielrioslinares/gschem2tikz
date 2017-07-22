@@ -1,19 +1,18 @@
 # gschem2tikz
 
-This script converts a .sch from gEDA (gschem) schematic creator to tikz shapes. In order to use it you must execute in the root folder the next commands:
+The program converts .sch files to TikZ. It works in Linux, probably MacOS X but I don't think in Microsoft Windows will work.
 
-```python
-from core.Schematic import Schematic
-
-file = 'untitled.sch'
-
-config = 'config/config_default.ini'
-
-directories = ['/usr/share/gEDA/sym/']
-
-print( Schematic(file, config, directories).draw() )
+In order to run the program you need to have installed pyqt5 package, you can install it with pip or as want:
+```sh
+sudo pip install pyqt5
 ```
+and of course python (python 3) in order to run the program is very easy:
+```sh
+python gschem2tikz.py
+```
+although in Ubuntu for example is python3 gschem2tikz.py, once you run the GUI, a ~/.gschem2tikz folder will be created for saving all the presets you create for it.
 
-where file is the absolute (or relative path) of the schematic, config is 'config/config_default.ini' in general and directories is a list of all directories where you have defined components for gschem.
+This is the main GUI
 
-This is a very early development, after a couple days I will create a GUI for being more user-friendly.
+![Image](https://github.com/hasbornasu/gschem2tikz/blob/master/images/GUI.png)
+
