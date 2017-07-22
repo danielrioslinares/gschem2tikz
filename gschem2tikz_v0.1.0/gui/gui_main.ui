@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog_Dialog_is_DialogUI</class>
+ <widget class="QDialog" name="dialog_Dialog_is_DialogUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>368</width>
+    <height>730</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>368</width>
+    <height>730</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>gschem2tikz v1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="geda-gschem">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <widget class="QTabWidget" name="widget_TabWidget_in_MainDialog_is_MainTab">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>369</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>369</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>369</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_General">
+    <attribute name="title">
+     <string>General</string>
+    </attribute>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_General_is_OutputFileNameFormatBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>361</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>360</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Output file name format</string>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>341</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="widget_GridLayout_in_MainTab_General_OutputFileNameFormatBox_is_Layout">
+       <item row="0" column="3">
+        <widget class="QLabel" name="widget_LineEdit_in_MainTab_General_OutputFileNameFormatBox_Layout_is_Extension">
+         <property name="text">
+          <string>.tikz</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="widget_LineEdit_in_MainTab_General_OutputFileNameFormatBox_Layout_is_strPrefix"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_General_OutputFileNameFormatBox_Layout_is_boolOriginalName">
+         <property name="text">
+          <string>Original name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="widget_LineEdit_in_MainTab_General_OutputFileNameFormatBox_Layout_is_strSuffix"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_General_is_OutputFileSaveModeBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>361</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>361</width>
+       <height>121</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>361</width>
+       <height>121</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Output file save mode</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>341</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalLayout_in_MainTab_General_OutputFileSaveModeBox_is_Layout">
+       <item>
+        <widget class="QRadioButton" name="widget_VerticalLayout_in_MainTab_General_OutputFileSaveModeBox_Layout_is_boolSaveOriginalDirectory">
+         <property name="text">
+          <string>Conserve the original directory</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="widget_VerticalLayout_in_MainTab_General_OutputFileSaveModeBox_is_Layout_is_boolSaveIndividualFile">
+         <property name="text">
+          <string>A &amp;dialog pop up for each file</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="widget_VerticalLayout_in_MainTab_General_OutputFileSaveModeBox_is_Layout_is_boolSaveAllFilesSameDirectory">
+         <property name="text">
+          <string>A dialog pop &amp;up for all the files</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_General_is_OtherBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>190</y>
+       <width>361</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>361</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>361</width>
+       <height>121</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Other</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>341</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalLayout_in_MainTab_General_OtherBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_General_OutputFileNameFormat_Layout_is_boolLetGschemSetAttributesToShow">
+         <property name="text">
+          <string>Let gschem set the attributes to show</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_General_OutputFileNameFormat_Layout_is_boolIncludeTikZEnvironment">
+         <property name="text">
+          <string>Include TikZ environment (\begin{tikzpicture})</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_Libraries">
+    <attribute name="title">
+     <string>Libraries</string>
+    </attribute>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_Libraries_is_GschemSymbolsDirectoriesBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>gschem and TikZ symbols directories</string>
+     </property>
+     <widget class="QListWidget" name="widget_ListWidget_in_MainTab_Libraries_GschemSymbolsDirectoriesBox_is_DirectoryList">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>301</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>34</width>
+        <height>226</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_Libraries_GschemSymbolsDirectories_is_ControlPanelLayout">
+       <item>
+        <widget class="QToolButton" name="widget_ToolButton_in_MainTab_Libraries_GschemSymbolsDirectories_ControlPanelLayout_is_AddDirectory">
+         <property name="text">
+          <string>+</string>
+         </property>
+         <property name="icon">
+          <iconset theme="edit-add">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="widget_ToolButton_in_MainTab_Libraries_GschemSymbolsDirectories_ControlPanelLayout_is_DeleteDirectory">
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="icon">
+          <iconset theme="remove">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="widget_ToolButton_in_MainTab_Libraries_GschemSymbolsDirectories_ControlPanelLayout_is_PriorizeTop">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset theme="arrow-up-double">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="widget_ToolButton_in_MainTab_Libraries_GschemSymbolsDirectories_ControlPanelLayout_is_PriorizeUp">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset theme="arrow-up">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="widget_ToolButton_in_MainTab_Libraries_GschemSymbolsDirectories_ControlPanelLayout_is_PriorizeDown">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset theme="arrow-down">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="widget_ToolButton_in_MainTab_Libraries_GschemSymbolsDirectories_ControlPanelLayout_is_PriorizeBottom">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset theme="arrow-down-double">
+           <normaloff>.</normaloff>.</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_Thickness">
+    <attribute name="title">
+     <string>Thickness</string>
+    </attribute>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_Thickness_is_SchematicLineWidthBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>366</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Schematic line width</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>161</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="widget_FormLayout_in_MainTab_Thickness_SchematicLineWidthBox_is_Layout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_Line">
+         <property name="text">
+          <string>Line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_Bus">
+         <property name="text">
+          <string>Bus</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatBus">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_Net">
+         <property name="text">
+          <string>Net</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatNet">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_BoxLine">
+         <property name="text">
+          <string>Box line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatBoxLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_CircleLine">
+         <property name="text">
+          <string>Circle line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatCircleLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_ArcLine">
+         <property name="text">
+          <string>Arc line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatArcLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_PinLine">
+         <property name="text">
+          <string>Pin line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatPinLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_PinheadLine">
+         <property name="text">
+          <string>Pin head line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_SchematicLineWidthBox_Layout_is_floatPinHeadLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_Thickness_is_TextAlignmentDistanceBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>366</y>
+       <width>361</width>
+       <height>99</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Text alignment distance</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>137</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="widget_FormLayout_in_MainTab_Thickness_TextAlignmentDistanceBox_is_SchematicLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_TextAlignmentDistanceBox_SchematicLayout_is_Schematic">
+         <property name="text">
+          <string>Schematic</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_TextAlignmentDistanceBox_SchematicLayout_is_floatSchematic">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>148</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="widget_FormLayout_in_MainTab_Thickness_TextAlignmentDistanceBox_is_ComponentLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_TextAlignmentDistanceBox_ComponentLayout_is_Component">
+         <property name="text">
+          <string>Component</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_TextAlignmentDistanceBox_ComponentLayout_is_floatComponent">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_Thickness_is_ComponentLineWidthBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>181</width>
+       <height>366</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Component line width</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>161</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="widget_GroupBox_in_MainTab_Thickness_ComponentLineWidthBox_is_Layout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_Line">
+         <property name="text">
+          <string>Line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_Bus">
+         <property name="text">
+          <string>Bus</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatBus">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_Net">
+         <property name="text">
+          <string>Net</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatNet">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_BoxLine">
+         <property name="text">
+          <string>Box line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatBoxLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_CircleLine">
+         <property name="text">
+          <string>Circle line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatCircleLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_ArcLine">
+         <property name="text">
+          <string>Arc line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatArcLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_PinLine">
+         <property name="text">
+          <string>Pin line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatPinLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="widget_Label_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_PinHeadLine">
+         <property name="text">
+          <string>Pin head line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QDoubleSpinBox" name="widget_DoubleSpinBox_in_MainTab_Thickness_ComponentLineWidthBox_Layout_is_floatPinHeadLine">
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_Colors">
+    <attribute name="title">
+     <string>Colors</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="widget_GridLayout_in_MainTab_Colors_is_Layout">
+      <item row="8" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_DetachedAtribute">
+        <property name="text">
+         <string>detached attribute</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_LogicBubble">
+        <property name="text">
+         <string>logic bubble</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Background">
+        <property name="text">
+         <string>background</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_GridPoint">
+        <property name="text">
+         <string>grid point</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Pin">
+        <property name="text">
+         <string>pin</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_NetEndpoint">
+        <property name="text">
+         <string>net endpoint</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Net">
+        <property name="text">
+         <string>net</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Lock">
+        <property name="text">
+         <string>lock</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_MeshGridMayor">
+        <property name="text">
+         <string>mesh grid mayor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_MeshGridMinor">
+        <property name="text">
+         <string>mesh grid minor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Graphic">
+        <property name="text">
+         <string>graphic (line)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Selection">
+        <property name="text">
+         <string>selection</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Attribute">
+        <property name="text">
+         <string>attribute</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_BoundingBox">
+        <property name="text">
+         <string>bounding box</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_ZoomBox">
+        <property name="text">
+         <string>zoom box</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Stroke">
+        <property name="text">
+         <string>stroke</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Text">
+        <property name="text">
+         <string>text</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_Bus">
+        <property name="text">
+         <string>bus</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="widget_Label_in_MainTab_Colors_Layout_is_NetJunction">
+        <property name="text">
+         <string>net junction</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strZoomBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strBoundingBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strSelection">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strDetachedAttribute">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strAttribute">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strNetEndpoint">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strGraphic">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strPin">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strNet">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strBackground">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strLogicBubble">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strGridPoint">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strText">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strBus">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strStroke">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strLock">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strNetJunction">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strMeshGridMayor">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QComboBox" name="widget_ComboBox_in_MainTab_Colors_Layout_is_strMeshGridMinor">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_ColorDefinitions">
+    <attribute name="title">
+     <string>Color definitions</string>
+    </attribute>
+    <widget class="QTableWidget" name="widget_TableWidget_in_MainTab_ColorDefinitions_is_ColorTable">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>321</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Color label</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Red</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Green</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Blue</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_15">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>370</y>
+       <width>34</width>
+       <height>72</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_ColorDefinitions_is_ColorTableControlsLayout">
+      <item>
+       <widget class="QToolButton" name="widget_ToolButton_in_MainTab_ColorDefinitions_ColorTableControlsLayout_is_AddColor">
+        <property name="text">
+         <string>+</string>
+        </property>
+        <property name="icon">
+         <iconset theme="edit-add">
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="widget_ToolButton_in_MainTab_ColorDefinitions_ColorTableControlsLayout_is_DelColor">
+        <property name="text">
+         <string>-</string>
+        </property>
+        <property name="icon">
+         <iconset theme="remove">
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_ComponentAttributes">
+    <attribute name="title">
+     <string>Schematic Attributes</string>
+    </attribute>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_SchematicAttributes_is_SymbolOnlyBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Symbol only</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>124</width>
+        <height>332</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_SchematicAttributes_SymbolOnlyBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolDevice">
+         <property name="text">
+          <string>device</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolGraphical">
+         <property name="text">
+          <string>graphical</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolDescription">
+         <property name="text">
+          <string>description</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolComment">
+         <property name="text">
+          <string>comment</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolPinseq">
+         <property name="text">
+          <string>pinseq</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolPinnumber">
+         <property name="text">
+          <string>pinnumber</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolPinType">
+         <property name="text">
+          <string>pintype</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolPinLabel">
+         <property name="text">
+          <string>pinlabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolNumSlots">
+         <property name="text">
+          <string>numslots</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolSlotDef">
+         <property name="text">
+          <string>slotdef</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolFootPrint">
+         <property name="text">
+          <string>footprint</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolOnlyBox_Layout_is_boolDocumentation">
+         <property name="text">
+          <string>documentation</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_SchematicAttributes_is_SchematicOnlyBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>181</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Schematic only</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>84</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_SchematicAttributes_SchematicOnlyBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SchematicOnlyBox_Layout_is_boolNetName">
+         <property name="text">
+          <string>netname</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SchematicOnlyBox_Layout_is_boolSource">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_SchematicAttributes_is_SymbolAndSchematicBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>90</y>
+       <width>181</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Symbol and Schematic</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>99</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolRefDes">
+         <property name="text">
+          <string>refdes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolSlot">
+         <property name="text">
+          <string>slot</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolNet">
+         <property name="text">
+          <string>net</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolValue">
+         <property name="text">
+          <string>value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolSymVersion">
+         <property name="text">
+          <string>symversion</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolDistLicense">
+         <property name="text">
+          <string>dist-license</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_SymbolAndSchematicBox_Layout_is_boolUseLicense">
+         <property name="text">
+          <string>use-license</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_SchematicAttributes_is_OtherBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>320</y>
+       <width>181</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Other</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>125</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_SchematicAttributes_OtherBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_OtherBox_Layout_is_boolFile">
+         <property name="text">
+          <string>file</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_OtherBox_Layout_is_boolAuthor">
+         <property name="text">
+          <string>author</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_OtherBox_Layout_is_boolPins">
+         <property name="text">
+          <string>pins</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_SchematicAttributes_is_ModelPropertiesBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>370</y>
+       <width>181</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Model properties</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>106</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_SchematicAttributes_ModelPropertiesBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_ModelPropertiesBox_Layout_is_boolModelName">
+         <property name="text">
+          <string>model-name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_SchematicAttributes_ModelPropertiesBox_Layout_is_boolModel">
+         <property name="text">
+          <string>model</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Tab_in_MainTab_is_ComponentAttributes">
+    <attribute name="title">
+     <string>Component Attributes</string>
+    </attribute>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_ComponentAttributes_is_SchematicOnlyBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>181</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Schematic only</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>84</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_ComponentAttributes_SchematicOnlyBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SchematicOnlyBox_Layout_is_boolNetName">
+         <property name="text">
+          <string>netname</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SchematicOnlyBox_Layout_is_boolSource">
+         <property name="text">
+          <string>source</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_ComponentAttributes_is_SymbolOnlyBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Symbol only</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>124</width>
+        <height>332</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_ComponentAttributes_SymbolOnlyBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolDevice">
+         <property name="text">
+          <string>device</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolGraphical">
+         <property name="text">
+          <string>graphical</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolDescription">
+         <property name="text">
+          <string>description</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolComment">
+         <property name="text">
+          <string>comment</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolPinseq">
+         <property name="text">
+          <string>pinseq</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolPinnumber">
+         <property name="text">
+          <string>pinnumber</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolPinType">
+         <property name="text">
+          <string>pintype</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolPinLabel">
+         <property name="text">
+          <string>pinlabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolNumSlots">
+         <property name="text">
+          <string>numslots</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolSlotDef">
+         <property name="text">
+          <string>slotdef</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolFootPrint">
+         <property name="text">
+          <string>footprint</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolOnlyBox_Layout_is_boolDocumentation">
+         <property name="text">
+          <string>documentation</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_ComponentAttributes_is_OtherBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>320</y>
+       <width>181</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Other</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>125</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_ComponentAttributes_OtherBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_OtherBox_Layout_is_boolFile">
+         <property name="text">
+          <string>file</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_OtherBox_Layout_is_boolAuthor">
+         <property name="text">
+          <string>author</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_OtherBox_Layout_is_boolPins">
+         <property name="text">
+          <string>pins</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_ComponentAttributes_is_ModelPropertiesBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>370</y>
+       <width>181</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Model properties</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>106</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_ComponentAttributes_ModelPropertiesBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_ModelPropertiesBox_Layout_is_boolModelName">
+         <property name="text">
+          <string>model-name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_ModelPropertiesBox_Layout_is_boolModel">
+         <property name="text">
+          <string>model</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="widget_GroupBox_in_MainTab_ComponentAttributes_is_SymbolAndSchematicBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>90</y>
+       <width>181</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Symbol and Schematic</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>99</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_is_Layout">
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolRefDes">
+         <property name="text">
+          <string>refdes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolSlot">
+         <property name="text">
+          <string>slot</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolNet">
+         <property name="text">
+          <string>net</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolValue">
+         <property name="text">
+          <string>value</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolSymVersion">
+         <property name="text">
+          <string>symversion</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolDistLicense">
+         <property name="text">
+          <string>dist-license</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="widget_CheckBox_in_MainTab_ComponentAttributes_SymbolAndSchematicBox_Layout_is_boolUseLicense">
+         <property name="text">
+          <string>use-license</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="widget_GroupBox_in_MainDialog_is_Preset">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>500</y>
+     <width>120</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Preset</string>
+   </property>
+   <widget class="QPushButton" name="widget_PushButton_in_MainDialog_Preset_is_Delete">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>120</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="widget_PushButton_in_MainDialog_Preset_is_Load">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>60</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="widget_ComboBox_in_MainDialog_Preset_is_Preset">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>30</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="widget_PushButton_in_MainDialog_Preset_is_Save">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>90</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="widget_PushButton_in_MainDialog_Preset_is_Refresh">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>150</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_12">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>500</y>
+     <width>34</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="widget_VerticalBoxLayout_in_MainDialog_is_SchematicListControlLayout">
+    <item>
+     <widget class="QToolButton" name="widget_ToolButton_in_MainDialog_SchematicListControlLayout_is_AddSchematics">
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="icon">
+       <iconset theme="edit-add">
+        <normaloff>.</normaloff>.</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="widget_ToolButton_in_MainDialog_SchematicListControlLayout_is_DeleteSchematic">
+      <property name="text">
+       <string>-</string>
+      </property>
+      <property name="icon">
+       <iconset theme="remove">
+        <normaloff>.</normaloff>.</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="widget_ToolButton_in_MainDialog_SchematicListControlLayout_is_DeleteSchematics">
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset theme="package-remove">
+        <normaloff>.</normaloff>.</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="widget_ToolButton_in_MainDialog_SchematicListControlLayout_is_Run">
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset theme="system-run">
+        <normaloff>.</normaloff>.</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="widget_ToolButton_in_MainDialog_SchematicListControlLayout_is_About">
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset theme="info">
+        <normaloff>.</normaloff>.</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>700</y>
+     <width>311</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="widget_HorizontalBoxLayout_in_MainDialog_is_StatusLayout">
+    <item>
+     <widget class="QLabel" name="widget_Label_in_MainDialog_StatusLayout_is_CurrentSchematic">
+      <property name="text">
+       <string>Ready</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="widget_ProgressBar_in_MainDialog_StatusLayout_is_ProgressBar">
+      <property name="value">
+       <number>100</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QListWidget" name="widget_ListWidget_in_MainDialog_is_SchematicList">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>500</y>
+     <width>201</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="dragEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="dragDropMode">
+    <enum>QAbstractItemView::DragDrop</enum>
+   </property>
+   <property name="resizeMode">
+    <enum>QListView::Adjust</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
