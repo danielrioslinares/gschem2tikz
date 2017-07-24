@@ -11,10 +11,9 @@ descrip = ("Tool for convert a gschem (gEDA) schematic to TikZ")
 setup(
 	name = "gschem2tikz",
 	version = "0.1.0",
-	author = "Daniel Ríos Linares",
-	author_email = "riv@hotmail.es",
+	author = "hasbornasu",
 	description = descrip,
-	license = "GPL",
+	license = "GPL v3",
 	keywords = "gEDA, TikZ, LaTeX, python, circuitikz, diagram",
 	long_description=long_description,
 	packages = ['core','gui','cfg'],
